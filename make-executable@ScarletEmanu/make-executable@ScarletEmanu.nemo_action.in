@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Make Executable (Admin)
+_Comment=Mark %F as executable elevating privileges if necessary.
+Exec=<make-executable@ScarletEmanu/make_executable.sh %F>
+Icon-Name=application-x-executable-symbolic
+Selection=notnone
+Extensions=nodirs;
+Conditions=exec <make-executable@ScarletEmanu/check_not_executable.sh %F>;
